@@ -15,6 +15,11 @@
     <description>sportlivestream</description>
     <properties>
         <java.version>11</java.version>
+
+
+
+
+        <java.runtime>11</java.runtime>
     </properties>
     <dependencies>
         <dependency>
@@ -57,6 +62,12 @@
 
     <build>
         <plugins>
+
+            <plugin>
+                <groupId>com.heroku.sdk</groupId>
+                <artifactId>heroku-maven-plugin</artifactId>
+                <version>3.0.3</version>
+            </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
